@@ -1,0 +1,242 @@
+* {
+box-sizing: border-box;
+}
+:root {
+--tab: 0;
+--brightness1: 100%;
+--brightness2: 100%;
+--promohide1: block; 
+--promohide2: block;
+--promohide3: block;
+--grayscale1: 0%;
+--grayscale2: 0%;
+--grayscale3: 0%;
+}
+ul.wtfnavbar {
+/* McDonalds hamburgers are the worst. They are worse than Burger King. A Big Mac has 26 grams of fat, A quarter pounder has 28 grams of fat. */
+list-style-type: none;
+margin: 0px 0px 0px 0px;
+padding: 0px;
+overflow: hidden;
+background-image: linear-gradient(white 1%, #f2f3f7 12%, #d7d8de 37%, #b6b7ba 3%, #c3c4c7 40%, #d2d3d6 80%, #d7d8de 94%, #bababf 10%);
+top: 0;
+width: 100%;
+border-top: 1px solid black;
+/* filter: drop-shadow(0px -1px 2px black); */
+border-radius: 0px 0px 5px 5px;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+}
+li.wtfnavbarlink {
+/* I know it's a ripoff of the mac navbar, but that's because professional websites look cool! */
+float: left;
+padding: 3px;
+flex: 12.5%;
+text-shadow: 0px 1px 3px #7d7d7d;
+font-size: 18px;
+}
+li.wtfnavbarlink:hover {
+-webkit-filter: blur(0.5px);
+}
+a.a {
+color: black;
+text-decoration: none;
+font-family: Times New Roman, Arial;
+}
+ul.wtfnavbar2 {
+list-style-type: none;
+margin: 0px 0px 0px 0px;
+padding: 0px;
+overflow: hidden;
+top: 0;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+}
+li.wtfnavbartop {
+float: left;
+padding: 3px;
+flex: 12.5%;
+margin: 0px 0px -8px 0px;
+filter: drop-shadow(0px 0px 1px black); 
+}
+div.musicplayer {
+}
+div.navbar {
+border-bottom: 1px solid #3d3e40;
+border-top: 1px solid #303030;
+border-radius: 0px 0px 5px 5px;
+background-image: linear-gradient(#e9eaf0, #d7d8de);
+}
+div.allbackground {
+border: 1px solid #4e5257;
+border-radius: 5px;
+background-image: linear-gradient(#ebedf0, #b1b3b5);
+}
+ul.toplinks {
+list-style-type: none;
+margin: 0px 0px 0px 0px;
+padding: 0px;
+overflow: hidden;
+background-image: none;
+top: 0;
+width: 100%;
+border-radius: 0px 0px 5px 5px;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+}
+li.toplinks {
+float: left;
+padding: 0px;
+flex: 33.3%;
+margin: auto;
+display: block;
+}
+img.contact1 { 
+filter: brightness(var(--brightness1));
+}
+img.contact2 { 
+filter: brightness(var(--brightness2));
+}
+body {
+background-image: url('images/backtile.png');
+background-repeat: repeat; 
+padding-top: 5px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 30px;
+}
+@font-face { font-family: Quagera; src: url('fonts/quageraregular-jebd9.otf');}
+@font-face { font-family: Canterbury; src: url('fonts/Canterbury.ttf');} 
+@font-face {font-family: Trajan; src: url('fonts/TrajanPro.ttf'); }
+@media screen and (max-width: 768px) {
+img.tab {
+display: none;
+}
+}
+h1.introduction {
+font-family: Canterbury;
+text-align: center;
+}
+div.top {
+}
+p.intropara {
+font-family: Quagera;
+}
+@media screen and (max-width: 672px) {
+img.contact1 {
+display: none;
+}
+img.contact2 {
+display: none;
+}
+li.toplinks {
+float: none;
+flex: 100%;
+}
+}
+div.logo{
+background-image: linear-gradient(#e4e5eb, #e9eaf0);
+border-radius: 5px 5px 0px 0px;
+}
+h1 {
+font-family: Garamond, Times New Roman, Arial;
+text-align: center;
+max-width: 100%;
+}
+.promo1 {
+display: var(--promohide1);
+}
+.promo2 {
+display: var(--promohide2);
+}
+.promo3 {
+display: var(--promohide3);
+}
+div.promos {
+padding: 10px;
+}
+img.promo1 {
+filter: drop-shadow(0px 0px 2px black);
+border: 2px solid black;
+border-radius: 10px;
+max-width: 100%;
+margin: auto; 
+}
+img.promo2 {
+filter: drop-shadow(0px 0px 2px black);
+border: 2px solid black;
+border-radius: 10px;
+max-width: 100%;
+margin: auto; 
+}
+img.promo3 {
+filter: drop-shadow(0px 0px 2px black);
+border: 2px solid black;
+border-radius: 10px;
+max-width: 100%;
+margin: auto; 
+}
+a.promo1 {
+text-align: center; 
+text-decoration: none; 
+font-family: Times New Roman, Arial; 
+color: #0A1440; 
+text-shadow: 0px 1px 3px #7d7d7d;
+}
+a.promo2 {
+text-align: center; 
+text-decoration: none; 
+font-family: Times New Roman, Arial; 
+color: #0A1440; 
+text-shadow: 0px 1px 3px #7d7d7d;
+}
+a.promo3 {
+text-align: center; 
+text-decoration: none; 
+font-family: Times New Roman, Arial; 
+color: #0A1440; 
+text-shadow: 0px 1px 3px #7d7d7d;
+}
+div.promobuttons {
+}
+ul.prombuttons {
+list-style-type: none;
+margin: auto;
+padding: 0px;
+overflow: hidden;
+top: 0;
+width: 300px;
+border-radius: 0px 0px 5px 5px;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+/* background-image: repeating-linear-gradient(0deg,#45474C 2%,#7A7E87 6%, #8F939E 8%, #B4B9C6 10%, #8F939E 12%, #7A7E87, 14%, #45474C 16%); */
+/* background-image: repeating-linear-gradient(0deg,#45474C 2%,#7A7E87 6%, #8F939E 8%, #B4B9C6 10%); */
+/* background-image: repeating-linear-gradient(0deg,#7A7E87 2%,#8F939E 6%, #B4B9C6 8%, #8F939E 10%); */
+background-image: linear-gradient(0deg,#9398A4,#7A7E87);
+max-width: 100%;
+border: 1px solid black;
+border-radius: 5px;
+}
+li.promolist {
+margin:auto;
+padding: 0px;
+flex: 33.3%;
+}
+button.promo {
+background-color: rgba(76, 175, 80, 0);
+border: none;
+}
+img.prombutton1 {
+filter: grayscale(var(--grayscale1));
+}
+img.prombutton2 {
+filter: grayscale(var(--grayscale2)); 
+}
+img.prombutton3 {
+filter: grayscale(var(--grayscale3)); 
+}

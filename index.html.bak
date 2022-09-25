@@ -1,1 +1,144 @@
-<p>Under construction</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>3dmm.wtf - Powered by Github Pages.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="shortcut icon" href="images/icon.ico"/> -->
+<link rel="stylesheet" type="text/css" href="wtfcss/style.css"> 
+<link rel="icon" type="image/x-icon" href="wtfavicon.ico">
+<style>
+body {
+background-image: url('images/backtile.png');
+background-repeat: repeat; 
+padding-top: 5px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 30px;
+}
+</style>
+<script>
+// Get the root element
+var r = document.querySelector(':root');
+// Create a function for setting a variable value 
+function darken1() {
+// Set the value of variable --brightness1 to another value (in this case "80%")
+r.style.setProperty('--brightness1', '80%');
+}
+function normal1() {
+r.style.setProperty('--brightness1', '100%');
+}
+function darken2() {
+r.style.setProperty('--brightness2', '80%');
+}
+function normal2() {
+r.style.setProperty('--brightness2', '100%');
+}
+function promo1() {
+r.style.setProperty('--promohide1', 'block');
+r.style.setProperty('--promohide2', 'none');
+r.style.setProperty('--promohide3', 'none');
+r.style.setProperty('--grayscale1', '0%');
+r.style.setProperty('--grayscale2', '80%');
+r.style.setProperty('--grayscale3', '80%');
+}
+function promo2() {
+r.style.setProperty('--promohide1', 'none');
+r.style.setProperty('--promohide2', 'block');
+r.style.setProperty('--promohide3', 'none');
+r.style.setProperty('--grayscale1', '80%');
+r.style.setProperty('--grayscale2', '0%');
+r.style.setProperty('--grayscale3', '80%');
+}
+function promo3() {
+r.style.setProperty('--promohide1', 'none');
+r.style.setProperty('--promohide2', 'none');
+r.style.setProperty('--promohide3', 'block');
+r.style.setProperty('--grayscale1', '80%');
+r.style.setProperty('--grayscale2', '80%');
+r.style.setProperty('--grayscale3', '0%');
+}
+   function randompromo() {
+        var values = ["1","2", "3"],
+            valueToUse = values[Math.floor(Math.random() * values.length)];
+		var which = valueToUse;
+		 if (which == 1) {
+     promo1();
+ } else if (which == 2) {
+     promo2();
+ } else {
+ promo3();
+ }
+ }
+
+</script>
+</head>
+<body onload="randompromo()">
+<div class="musicplayer">
+<audio autoplay loop><source src="backgroundmusic.mp3" type="audio/mpeg"></audio>
+</div>
+<div class="allbackground">
+<div class="top">
+<div class="logo">
+<ul class="toplinks">
+<li class="toplinks"><a href="mailto:dooglord69420@gmail.com"><img onmouseenter="darken1()" onmouseleave="normal1()" class="contact1" src="images/contactgmail.png"></a></li>
+<li class="toplinks"><a href="index.html"><img style="max-width: 100%" src="images/3dmmwtflogo1.png"></a></li>
+<li class="toplinks"><a href="https://3dmm.com/member.php?u=8765"><img onmouseenter="darken2()" onmouseleave="normal2()" class="contact2" src="images/contact3dmm.png"></a></li>
+</ul>
+</div>
+<div class="navbar">
+<ul class="wtfnavbar2" style="z-index: 2;">
+<li class="wtfnavbartop"><img class="tab" src="images/tabactive.png"></li>
+<li class="wtfnavbartop"><img class="tab" src="images/tab4.png"></li>
+<li class="wtfnavbartop"><img class="tab" src="images/tab4.png"></li>
+<li class="wtfnavbartop"><img class="tab" src="images/tab4.png"></li>
+<li class="wtfnavbartop"><img class="tab" src="images/tab4.png"></li>
+<li class="wtfnavbartop"><img class="tab" src="images/tab4.png"></li>
+<li class="wtfnavbartop"><img class="tab" src="images/tab4.png"></li>
+<li class="wtfnavbartop"><img class="tab" src="images/tab4.png"></li>
+</ul>
+<!-- This is a sub nav bar -->
+<!-- Current links: Home (Not Index. I don't need to specify it as index just because the file is technically an index.html, POKERMAN), Movies, Weekly Doog, Anything Goes!, Community Media, Mods, Games, About --> 
+<ul class="wtfnavbar" style="z-index: 1;">
+<li class="wtfnavbarlink"><a class="a" href="index.html">Home</a></li>
+<li class="wtfnavbarlink"><a class="a" href="movies.html">Movies</a></li>
+<li class="wtfnavbarlink"><a class="a" href="weeklydoog.html">Weekly Doog</a></li>
+<li class="wtfnavbarlink"><a class="a" href="anythingoes.html">Anything Goes!</a></li>
+<li class="wtfnavbarlink"><a class="a" href="communitymedia.html">Community Media</a></li>
+<li class="wtfnavbarlink"><a class="a" href="mods.html">Mods</a></li>
+<li class="wtfnavbarlink"><a class="a" href="games.html">Games</a></li>
+<li class="wtfnavbarlink"><a class="a" href="about.html">About</a></li>
+</ul>
+</div>
+</div>
+<!-- <img style="max-width: 100%" src="Anythingoesicon.png"> -->
+<div class="promos">
+<img class="promo1" src="images/promo1.png">
+<a class="promo1" href="https://3dmm.com/showthread.php?t=57397">Download page</a>
+<img class="promo2" src="images/promo2.png">
+<a class="promo2" href="https://3dmm.com/showthread.php?t=56976">Download page</a>
+<img class="promo3" src="images/promo3.png">
+<a class="promo3" href="https://3dmm.com/showthread.php?t=57463">Download page</a>
+</div>
+<div class="promobuttons">
+<ul class="prombuttons">
+<li class="promolist"><button class="promo" onclick="promo1();"><img class="prombutton1" src="images/picturebutton.png"></button></li>
+<li class="promolist"><button class="promo" onclick="promo2();"><img class="prombutton2" src="images/picturebutton.png"></button></li>
+<li class="promolist"><button class="promo" onclick="promo3();"><img class="prombutton3" src="images/picturebutton.png"></button></li>
+</ul>
+</div>
+<br>
+<!-- Add image gallery for news with buttons for different image -->
+<!-- Tabs seperating homepage possibly -->
+<!-- Headlines and articles underneath -->
+<h1 style="text-align:center;font-family: Canterbury;color:#ADB119;filter: drop-shadow(0px 0px 2px black);">Under Construction.</h1>
+<br>
+<br>
+<!--
+<h1 class="slogan" style="font-size: 60px">One of the most reliable sources of 3DMM media.</h1>
+<p class="intropara">Discover the intiutive world of 3dmm.wtf. Check the movies page and help support the archival of this program by curating and submiting WTF movies for our community.</p>
+-->
+<!-- Use lots of images -->
+</div>
+</body>
+</html>
